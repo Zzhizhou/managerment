@@ -93,7 +93,7 @@
       </tr>
       </form>
     </table>
-    <p>已经有账号？<a href="${pageContext.request.contextPath}/login.jsp">登录</a></p>
+    <p>已经有账号？<a href="${pageContext.request.contextPath}/visitor/login">登录</a></p>
   </div>
   </body>
 </html>
