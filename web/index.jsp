@@ -57,16 +57,25 @@
       span{
         color: red;
       }
-      div{
+      #d2{
         background-color: gray;
         margin: 10% 20% ;
         height: 230px;
         width: 370px;
       }
+      /*#d1{
+        margin: 10% 70% ;
+
+      }*/
     </style>
   </head>
   <body>
-  <div style="text-align: center">
+    <div id="d1">
+      <p><a href="${pageContext.request.contextPath}/visitor/login">游客登录</a></p>
+      <p><a href="${pageContext.request.contextPath}/employee/login">员工登录</a></p>
+      <p><a href="${pageContext.request.contextPath}/managers/login">管理员登录</a></p>
+    </div>
+  <div id="d2" style="text-align: center">
     <h2>注册</h2>
     <table style="text-align: center">
       <form action="${pageContext.request.contextPath}/visitor/regist">
@@ -93,7 +102,6 @@
       </tr>
       </form>
     </table>
-    <p>已经有账号？<a href="${pageContext.request.contextPath}/visitor/login">登录</a></p>
   </div>
   </body>
 </html>
